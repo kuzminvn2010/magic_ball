@@ -1,4 +1,4 @@
-###"Игра Волшебный шар"
+### "Игра Волшебный шар"
 
 Суть игры состоит в том что Вы задаете вопрос и запускаете программу.
 Программа запустившись совершенно точно отвечает на ваш вопрос.
@@ -12,10 +12,11 @@ ruby 8ball.rb
 
 ```
 
-###"If you don't speak Russian this instruction for you"
+### "If you don't speak Russian this instruction for you"
 
 Do you want to know something?
-Ask the question and start this program
+Ask the question and start this program.
+The magic ball give to you a brief answer. 
 
 Instruction for use
 - download the program
