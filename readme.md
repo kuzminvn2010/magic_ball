@@ -1,5 +1,8 @@
 ### "Игра Волшебный шар"
 
+Программа написана на языке 'ruby'
+Для того что бы запустить её вы должны установить интерпритатор 'ruby'
+
 Суть игры состоит в том что Вы задаете вопрос и запускаете программу.
 Программа запустившись совершенно точно отвечает на ваш вопрос.
 
@@ -12,7 +15,11 @@ ruby 8ball.rb
 
 ```
 
+
 ### "If you don't speak Russian this instruction for you"
+
+The program is written in ruby
+If you want to use it you have to install interpretator ruby
 
 Do you want to know something?
 Ask the question and start this program.
