@@ -1,47 +1,30 @@
+require_relative "gem_data_ball"
 #### задача 3-3 магический шар
 #### Изготовил Кузьмин Вадим
+rus_greeting = GemDataBall.rus_hello.sample
+rus_response = GemDataBall.rus_answers.sample
 
-# Объявляем массив "Приветсвие"
-hello = [
-  "Привет, дорогой друг. Отвечаю на твой вопрос...",
-  "Кто вопрошает, тот получит ответ:",
-  "Здравствуй, смертный. Сегодня для тебя такой ответ:"
-]
+eng_greeting = GemDataBall.eng_hello.sample
+eng_response = GemDataBall.eng_answers.sample
 
-puts hello.sample # Выбираем случайный  элемент из массива "Приветствие"      
-puts # Вывод пустой строки
+user_input = " "
+until user_input == 1 || user_input == 2
+  puts "Are you from Russian?"
+  puts
+  puts "1 — yes"
+  puts "2 — no"
+  user_input = STDIN.gets.to_i
+end
 
-sleep 3 # Пауза 3 сек
-
-# Объявляем массив "Ответы"		
-answers = [
-  # Положительные
-  "Бесспорно",
-  "Предрешено",
-  "Никаких сомнений",
-  "Определённо да",
-  "Можешь быть уверен в этом",
-
-  # Нерешительно положительные
-  "Мне кажется — «да»",
-  "Вероятнее всего",
-  "Хорошие перспективы",
-  "Знаки говорят — «да»",
-  "Да",
-
-  # Нейтральные
-  "Пока не ясно, попробуй снова",
-  "Спроси позже",
-  "Лучше не рассказывать",
-  "Сейчас нельзя предсказать",
-  "Сконцентрируйся и спроси опять",
-
-  # Отрицательные
-  "Даже не думай",
-  "Мой ответ — «нет»",
-  "По моим данным — «нет»",
-  "Перспективы не очень хорошие",
-  "Весьма сомнительно"
-]
-
-puts answers.sample # Выбираем случайный  элемент из массива "Ответы"
+case user_input
+  when 1
+    puts rus_greeting
+    sleep 3
+    puts
+    puts rus_response
+  when 2
+    puts eng_greeting
+    sleep 3
+    puts
+    puts eng_response
+end
